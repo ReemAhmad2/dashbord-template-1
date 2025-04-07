@@ -40,7 +40,9 @@ body {
     overflow: hidden;
     transition: 0.5s;
 }
-
+.navigation.active{
+    width: 70px;
+}
 .navigation ul {
     position: absolute;
     top: 0;
@@ -128,8 +130,12 @@ body {
     width: calc(100% - 300px);
     position: relative;
     left: 300px;
+    transition: 0.5s;
 }
-
+.main.active{
+    width: calc(100% - 70px);
+    left: 70px;
+}
 .main nav {
     height: 70px;
     width: 100%;
