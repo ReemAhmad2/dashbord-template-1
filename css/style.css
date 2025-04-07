@@ -5,9 +5,9 @@
 :root {
     --primary-color: #003da8;
     --main-color: #eee;
-    --gray : #f5f5f5;
-    --blac1 : #555;
-    --black2 : #222;
+    --gray: #f5f5f5;
+    --blac1: #555;
+    --black2: #222;
 }
 
 * {
@@ -22,6 +22,7 @@ body {
     overflow-x: hidden;
     background-color: var(--main-color);
 }
+
 .container {
     position: relative;
     width: 100%;
@@ -52,11 +53,13 @@ body {
     width: 100%;
     list-style: none;
 }
+
 .navigation ul li:hover {
     border-bottom-left-radius: 50px;
     border-top-left-radius: 50px;
     background-color: var(--main-color);
 }
+
 .navigation ul li:nth-child(1) {
     margin-bottom: 40px;
     pointer-events: none;
@@ -70,9 +73,11 @@ body {
     color: var(--main-color);
 
 }
-.navigation ul li:hover a{
+
+.navigation ul li:hover a {
     color: var(--primary-color);
 }
+
 .navigation ul li a .icon {
     position: relative;
     display: block;
@@ -98,20 +103,58 @@ body {
     position: absolute;
     bottom: -50px;
     right: 0;
-    background-color : transparent;
+    background-color: transparent;
     border-radius: 50%;
     height: 50px;
     width: 50px;
     box-shadow: 35px -35px 0 10px var(--main-color);
 }
+
 .navigation ul li:hover a::before {
     content: '';
     position: absolute;
     top: -50px;
     right: 0;
-    background-color : transparent;
+    background-color: transparent;
     border-radius: 50%;
     height: 50px;
     width: 50px;
     box-shadow: 35px 35px 0 10px var(--main-color);
+}
+
+/* Main Section */
+.main {
+    min-height: 100vh;
+    width: calc(100% - 300px);
+    position: relative;
+    left: 300px;
+}
+
+.main nav {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav span {
+    color: var(--primary-color);
+    margin: auto 20px;
+    font-size: 22px
+}
+nav .search {
+    margin: auto 20px;
+}
+nav .search input[type=text] {
+    border: 1px solid var(--gray);
+    min-width: 250px;
+    line-height: 22px;
+    padding: 2px 5px;
+    border-radius: 15px;
+    padding-left: 22px;
+}
+nav .search lable{
+    font-weight: 700;
+    color: var(--blac1);
+    margin: auto 10px;
 }
